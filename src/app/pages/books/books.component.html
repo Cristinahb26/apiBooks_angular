@@ -1,0 +1,29 @@
+<main>
+
+    
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Id Libro" aria-label="Buscar" #search_id_book>
+            <button class="btn btn-outline" type="reset" (click)="search(search_id_book.value)">Buscar</button>
+        </form>
+    
+
+        <div class="contenedor-tarjetas" *ngIf="books.length>0; else noHay">
+
+            <ng-container *ngFor = "let book of books; let par =even">
+
+                <app-card [book]="book" [par]="par" (deleteBook) = "deleteCard($event)"></app-card>
+
+            </ng-container>
+
+        </div>
+
+</main>
+
+<ng-template #noHay>
+
+    <div class="contenedor-tarjetas">
+        <h3>No se encontro el Libro</h3>
+    </div>
+
+</ng-template>
+

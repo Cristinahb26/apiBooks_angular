@@ -1,0 +1,128 @@
+/* .sign-up h2{
+
+    text-align: center;
+    font-size: 3em;
+    color: #cc0c0c;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 70px;
+    text-shadow: 3px 3px peru;
+
+}
+
+ */
+
+
+
+  form{
+   
+    width: 100%;
+    height: 82.6vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./../../../assets/img/fondoRegistre.jpg");
+    background-position: center;
+    background-size: contain;
+
+}
+.contenedor{
+
+    height: 520px;
+    width: 25%;
+    background-color: rgb(255, 255, 255, 0.1);
+    border: 2px solid rgb(227, 227, 227, 0.2);
+    border-radius: 10px;
+    box-shadow: 4px 4px 3px grey;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.titulo{
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 70px;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 20px;
+    text-shadow: 3px 3px peru;
+
+}
+.formulario{
+
+    height: 250px;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+input{
+
+    background-color: rgba(62, 61, 61, 0.1);
+    border: 2px solid rgb(227, 227, 227, 0.1);
+    border-radius: 10px;
+    color: #fff;
+    /* box-shadow: 3px 3px 1px rgb(253, 252, 252, 0.3); */
+
+}
+::placeholder {
+
+    color:aliceblue;
+
+}
+
+.invalid-feedback{
+
+    font-size: 12px;
+}
+.checkbox {
+
+    margin-bottom: 10px;
+    color: #fff;
+
+}
+.check {
+
+    margin-right: 20px;
+
+}
+.btn{
+    font-size: 20px;
+    width: 90%;
+    margin-left: 25px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background-color:darkorange;
+    color: #fff;
+}
+
+.btn:active {
+    font-size: 20px;
+}
+
+.btn:hover {
+    color: #1c1c1c;
+    background-color: darkorange;
+}
+

@@ -1,0 +1,28 @@
+footer{
+    background-color: peru;
+    width: 100%;
+    height: 53px;
+    color: #fff;
+    
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    }
+    ul{
+        list-style: none;
+        height: 40px;
+        width: 15%;
+        margin-top: 15px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    img {
+        height: 20px;
+    }

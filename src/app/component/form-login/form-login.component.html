@@ -1,0 +1,40 @@
+<body> 
+    <form [formGroup]="form_login">
+
+        <div class="sign-up">
+            <h2>Login</h2>
+        </div>
+
+        <div class="informacion">
+                <div class="mb-3 info">
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email" formControlName="email"
+                    [ngClass]="{'is-invalid': form_login.get('email').invalid && (form_login.get('email').dirty || form_login.get('email').touched)}">
+                    
+                    <div *ngIf="!form_login.get('email').valid" class=invalid-feedback>
+                        <div *ngIf="form_login.get('email').errors.required">*Campo es Obligatorio</div>
+                        <div *ngIf="form_login.get('email').errors.email">Email Incorrecto</div>
+                    </div> 
+
+                </div>
+
+                <div class="mb-3 info">
+                    <input type="password" class="form-control" id="password" placeholder="Password" formControlName="password"
+                    [ngClass]="{'is-invalid': form_login.get('password').invalid && (form_login.get('password').dirty || form_login.get('password').touched)}">
+                    
+                    <div *ngIf="!form_login.get('password').valid" class=invalid-feedback>
+                        <div *ngIf="form_login.get('password').errors.required">*Campo es Obligatorio</div>
+                        <div *ngIf="form_login.get('password').errors.minLength">Contraseña Incorrecta</div>
+                    </div>
+
+                </div>
+        </div>
+        <button type="reset" class="btn" style="background-color: darkorange;" (click)="iniciarSesion()" [disabled]="form_login.invalid">Iniciar sesión</button>
+
+        <div class="row mb-3">
+            <div class="col texto">
+                <a href="#" style="color: white" class="btn">¿Has olvidado tu contraseña?</a>
+            </div>
+        </div>
+
+    </form>
+</body> 

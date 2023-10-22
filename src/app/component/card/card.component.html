@@ -1,0 +1,15 @@
+<div class="card" style="width: 18rem;">
+    <button type="button" class="btn-close" aria-label="Close" (click)="enviarCard()"></button> 
+    <img src="{{book.photo}}" class="card-img-top" alt="...">
+
+    <div class="card-body">
+        <h6 class="card-text">{{book.type}}</h6>
+        <div class="lines-effect"></div>
+        <h5 class="card-title">{{book.title | uppercase}}</h5>
+        <p class="card-author">Author: {{book.author | uppercase}}</p>
+        <p class="card-ref">{{book.id_book | refCodigo}} </p>
+        <h4 class="precio text-center">{{book.price}}€</h4>
+        
+        <a href="#" class="btn" [ngClass]="par ? 'even' : ''">Comprar</a>
+    </div>
+</div>

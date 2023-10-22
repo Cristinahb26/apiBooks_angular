@@ -1,0 +1,106 @@
+main{
+
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+.formulario{
+
+    height: 590px;
+    width: 100%;
+
+    background-image: url(../../../assets/img/fondoMagico.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+form{
+
+    height: 550px;
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+.titulo{
+
+    height: 80px;
+    width: 380px;
+    color: aliceblue;
+    text-shadow: 3px -2px peru;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+h2{
+
+    font-size: 50px;
+    
+}
+.formul{
+
+    height: 350px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+input{
+
+    background-color: rgba(21, 22, 22, 0.2);
+    border: 1px solid rgba(114, 117, 117, 0.3);
+    color: aliceblue;
+
+}
+::placeholder {
+
+    color:aliceblue;
+    text-align:center;
+
+}
+button{
+
+    background-color: darkorange;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+button:hover{
+
+    background-color: burlywood;
+    color: white;
+}
