@@ -21,8 +21,8 @@ export class AddBookComponent {
   addBook(id_book:number, title:string, type:string, author:string, price:number, photo:string) {
 
     let newBook = new Book(title, type, author, price, photo, id_book);
-    this.bookService.addBook(newBook).subscribe((data:Book[]) => {
-       this.books = data;
+    this.bookService.addBook(newBook).subscribe((data:any) => {
+       this.books = data[0];
     });
     this.router.navigate(['/books']);
 

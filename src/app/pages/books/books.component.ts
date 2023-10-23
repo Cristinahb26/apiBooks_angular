@@ -14,7 +14,7 @@ export class BooksComponent {
 
      constructor(public bookService: BooksService, public userService: UserService){
       this.bookService.getAll().subscribe((data: any) => {
-        this.books = data;
+        this.books = data[0];
        
       });
   
@@ -23,13 +23,13 @@ export class BooksComponent {
       if (id_book !== 0) {
         
         this.bookService.getOne(this.userService.user.id_user, id_book).subscribe((data: any) =>{
-                 this.books = data.data;
+                 this.books = data[0];
                  console.log(data);
                  
            });
       } else {
         this.bookService.getAll().subscribe((data: any) => {
-          this.books = data.data;
+          this.books = data[0];
           console.log(data);
           
         });
